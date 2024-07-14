@@ -1,5 +1,5 @@
 const NotFoundPage: React.FC = () => {
-    return <div className="w-screen h-screen flex justify-center items-center flex-col gap-2">
+    return <div className="w-screen h-screen flex justify-center items-center flex-col gap-2 bg-[#0F172A] text-[#DEE5EF]">
 
         <h1 className="text-4xl">Página não encontrada!</h1>
         Volte para a página inicial.

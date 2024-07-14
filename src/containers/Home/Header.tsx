@@ -6,7 +6,10 @@ const Header: React.FC = () => {
 		<main className="flex justify-between items-center px-12 py-2.5 h-24">
 			<img src={logo} alt="" />{" "}
 			<div className="flex gap-5 items-center">
-				<a href="/" className="h-5 flex items-center justify-center hover:border-b-2 hover:border-[#DEE5EF]">
+				<a
+					href="/"
+					className="h-5 flex items-center justify-center hover:border-b-2 hover:border-[#DEE5EF]"
+				>
 					Projectos
 				</a>
 				<Link

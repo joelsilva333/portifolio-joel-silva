@@ -4,6 +4,8 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: { Montserrat: ["Montserrat"] },
+			backgroundColor: { whiteDefault: "#DEE5EF", blueDefault: "#223975" },
+			textColor: { whiteDefault: "#DEE5EF", blueDefault: "#223975" },
 		},
 	},
 	plugins: [],
