@@ -8,7 +8,7 @@ import "swiper/css/pagination"
 // import required modules
 import { EffectCoverflow, Pagination } from "swiper/modules"
 import { useState } from "react"
-import { arrowRight } from "../../assets"
+import { arrowRight, elipseBlurRight} from "../../assets"
 
 const Projects: React.FC = () => {
 	const [openAboutIndex, setOpenAboutIndex] = useState<number | null>(null)
@@ -33,7 +33,7 @@ const Projects: React.FC = () => {
 	]
 
 	return (
-		<section className="flex flex-col p-12 gap-6 justify-center items-center h-[670px]">
+		<section className="flex flex-col p-12 gap-6 justify-center items-center h-[670px] relative" id="projects">
 			<h2 className="text-2xl">Meus projectos e trabalhos recentes</h2>
 
 			<div className="h-[460px] w-3/4">
@@ -111,6 +111,12 @@ const Projects: React.FC = () => {
 						</SwiperSlide>
 					))}
 				</Swiper>
+
+				<img
+				src={elipseBlurRight}
+				alt=""
+				className="absolute right-0 bottom-0 animate-pulse"
+			/>
 			</div>
 		</section>
 	)

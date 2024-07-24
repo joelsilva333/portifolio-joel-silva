@@ -2,7 +2,7 @@ import React from "react"
 
 const Banner: React.FC = () => {
 	return (
-		<section className="flex justify-center items-center px-24 py-12 h-80">
+		<section className="flex justify-center items-center px-24 py-12 h-80 z-40">
 			<div className="flex flex-col items-center justify-center gap-7 p-2.5">
 				<h1 className="font-bold text-3xl text-center">
 					Desenvolvedor Front-end, Backend & Designer

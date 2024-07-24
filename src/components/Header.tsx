@@ -1,13 +1,22 @@
-import { Link } from "react-router-dom"
-import { logo } from "../../assets"
+import { Link } from "react-router-dom";
+import { logo } from "../assets";
 
 const Header: React.FC = () => {
+	const scrollToProjects = (e: React.MouseEvent) => {
+		e.preventDefault();
+		const projectsSection = document.getElementById("projects");
+		if (projectsSection) {
+			projectsSection.scrollIntoView({ behavior: "smooth" });
+		}
+	};
+
 	return (
-		<main className="flex justify-between items-center px-12 py-2.5 h-24">
+		<main className="flex justify-between items-center px-12 py-2.5 h-24 z-40">
 			<img src={logo} alt="" />{" "}
 			<div className="flex gap-5 items-center">
 				<a
 					href="/"
+					onClick={scrollToProjects}
 					className="h-5 flex items-center justify-center hover:border-b-2 hover:border-[#DEE5EF]"
 				>
 					Projectos
@@ -20,7 +29,7 @@ const Header: React.FC = () => {
 				</Link>
 			</div>
 		</main>
-	)
+	);
 }
 
-export default Header
+export default Header;

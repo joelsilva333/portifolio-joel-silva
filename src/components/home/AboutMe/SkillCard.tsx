@@ -18,22 +18,22 @@ const SkillCard: React.FC<SkillCardProps> = ({
 	skills,
 }) => {
 	return (
-		<div className="group flex flex-col bg-[#DEE5EF] rounded-[50px] gap-4 px-12 py-12 text-blueDefault min-h-[615px] items-center text-center w-[350px] transition-colors duration-300 hover:bg-blueDefault hover:text-[#DEE5EF] hover:shadow-sm hover:shadow-white cursor-pointer">
+		<div className=" flex flex-col bg-[#DEE5EF] rounded-[50px] gap-4 px-12 py-12 text-blueDefault min-h-[615px] items-center text-center w-[350px] cursor-pointer transition-all duration-700 hover:-translate-y-2 ">
 			<img
 				src={mainIcon}
 				alt="Ícone Principal"
-				className="w-14 h-14 transition-colors duration-300 group-hover:invert"
+				className="w-14 h-14 "
 			/>
 
-			<h1 className="font-bold text-lg transition-colors duration-300 group-hover:text-[#DEE5EF]">
+			<h1 className="font-bold text-lg ">
 				{title}
 			</h1>
 
-			<p className="text-sm transition-colors duration-300 group-hover:text-[#DEE5EF]">
+			<p className="text-sm ">
 				{description}
 			</p>
 
-			<h2 className="font-semibold text-base transition-colors duration-300 group-hover:text-[#DEE5EF]">
+			<h2 className="font-semibold text-base ">
 				{toolTitle}
 			</h2>
 
@@ -46,14 +46,14 @@ const SkillCard: React.FC<SkillCardProps> = ({
 					<div key={index} className="flex items-center justify-center">
 						<img
 							src={icon}
-							className="Tool Icon transition-colors duration-300"
+							className="Tool Icon"
 						/>
 					</div>
 				))}
 			</div>
 
 			<div className="flex flex-col gap-1">
-				<h2 className="font-semibold text-base transition-colors duration-300 group-hover:text-[#DEE5EF]">
+				<h2 className="font-semibold text-base ">
 					Habilidades
 				</h2>
 
@@ -61,7 +61,7 @@ const SkillCard: React.FC<SkillCardProps> = ({
 					{skills.map((text, index) => (
 						<p
 							key={index}
-							className="text-sm transition-colors duration-300 group-hover:text-[#DEE5EF]"
+							className="text-sm "
 						>
 							{text}
 						</p>

@@ -108,7 +108,7 @@ const AboutMe: React.FC = () => {
 	]
 
 	return (
-		<section className="bg-[#223975] px-36 py-20 flex flex-col gap-12 rounded-[50px] items-center mt-4">
+		<section className="bg-[#223975] px-36 py-20 flex flex-col gap-12 rounded-[50px] items-center mt-4 z-40">
 			<div className="flex flex-col gap-10 text-center w-2/3">
 				<h2 className="text-2xl">
 					Oi, chamo-me Joel Germano da Silva. Prazer em conhecê-lo.
