@@ -12,7 +12,7 @@ const Banner: React.FC = () => {
 					meticulosa aos detalhes.
 				</p>
 				<a
-					href="/public/Currículo_Joel_Silva.pdf"
+					href="/Curriculo_Joel_Silva.pdf"
 					download="Joel_Germano_CV.pdf"
 					className="lg:py-4 lg:px-5 max-lg:py-2 max-lg:px-4 rounded-full bg-[#DEE5EF] hover:border-2 hover:border-[#DEE5EF] transition-colors text-[#0F172A] hover:text-[#DEE5EF] hover:bg-transparent duration-700 h-12 max-lg:h-10 flex justify-center items-center max-lg:text-xs"
 				>

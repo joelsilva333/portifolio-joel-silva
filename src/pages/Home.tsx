@@ -1,4 +1,4 @@
-import { elipseBlur} from "../assets"
+import { elipseBlur } from "../assets"
 import Footer from "../components/Footer"
 import Header from "../components/Header"
 import AboutMe from "../containers/Home/AboutMe"
@@ -11,17 +11,13 @@ const Home: React.FC = () => {
 		<main className="bg-[#0F172A] text-[#DEE5EF] h-screen overflow-y-auto font-Montserrat scrollbar-custom max-lg:gap-10 gap-24 flex flex-col relative">
 			<Header />
 			<Banner />
-
+			<Projects />
 			<img
 				src={elipseBlur}
 				alt="Nada"
 				className="absolute -top-3/4 -left-1/2  animate-pulse"
 			/>
-
 			<AboutMe />
-			
-
-			<Projects />
 			<Enterprises />
 			<Footer />
 		</main>
