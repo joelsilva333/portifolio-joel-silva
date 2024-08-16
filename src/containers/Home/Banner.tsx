@@ -7,10 +7,12 @@ const Banner: React.FC = () => {
 				<h1 className="font-bold text-3xl text-center max-lg:text-lg max-sm:text-base">
 					Desenvolvedor Front-end, Backend & Designer
 				</h1>
+				
 				<p className="w-2/3 max-sm:w-4/5 text-center max-sm:text-xs max-lg:text-sm">
 					Crio experiências digitais envolventes, acessíveis e com atenção
 					meticulosa aos detalhes.
 				</p>
+
 				<a
 					href="/Curriculo_Joel_Silva.pdf"
 					download="Joel_Germano_CV.pdf"

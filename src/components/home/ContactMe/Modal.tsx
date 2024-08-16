@@ -51,7 +51,7 @@ const ContactMeModal: FC<ContactMeModalProps> = ({ onClose }) => {
 		>
 			<div
 				ref={modalRef}
-				className={`w-4/5 max-sm:w-full max-sm:h-full max-sm:rounded-none h-[85lvh] flex bg-blueSecondary rounded-3xl transform transition-transform duration-500 ${
+				className={`w-4/5 z-50 max-sm:w-full max-sm:h-full max-sm:rounded-none h-[85lvh] flex bg-blueSecondary rounded-3xl transform transition-transform duration-500 ${
 					isOpen ? "scale-100" : "scale-90"
 				} ${isClosing ? "scale-0" : ""}`}
 			>

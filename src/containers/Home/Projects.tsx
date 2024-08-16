@@ -70,7 +70,7 @@ const Projects: React.FC = () => {
 
 	return (
 		<section
-			className="bg-[#223975] flex flex-col lg:p-12 max-lg:p-10 gap-6 max-lg:gap-4 justify-center items-center h-[670px] relative z-50 sm:rounded-[50px]"
+			className="bg-[#223975] flex flex-col lg:p-12 max-lg:p-10 gap-6 max-lg:gap-4 justify-center items-center h-[670px] relative sm:rounded-[50px]"
 			id="projects"
 		>
 			<h2 className="text-2xl text-center max-lg:text-lg max-sm:text-base">
