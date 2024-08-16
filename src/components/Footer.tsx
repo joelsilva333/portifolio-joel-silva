@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
 			</nav>
 
 			<div className="flex flex-col gap-4 items-center px-12">
-				<img src={logo} alt="" className="w-10"/>
+				<img src={logo} alt="" className="w-10 "/>
 
 				<p className="font-Inconsolata max-lg:text-sm">
 					“A gratidão me fez encontrar a beleza na paciência”
@@ -32,21 +32,21 @@ const Footer: React.FC = () => {
 
 				<div className="flex gap-4 justify-center items-center p-5 max-lg:text-sm">
 					<a href="https://www.instagram.com/joel_germany_/" target="_blank">
-						<img src={instagramIcon} alt="" className="hover:invert" />
+						<img src={instagramIcon} alt="" className="hover:invert w-8" />
 					</a>
 
 					<a
 						href="https://www.linkedin.com/in/joel-g-da-silva/"
 						target="_blank"
 					>
-						<img src={linkedinIcon} alt="" className="hover:invert" />
+						<img src={linkedinIcon} alt="" className="hover:invert w-8" />
 					</a>
 					<a href="mailto:joelpitra44@gmail.com">
-						<img src={emailIcon} alt="" className="hover:invert" />
+						<img src={emailIcon} alt="" className="hover:invert w-8" />
 					</a>
 				</div>
 
-				<div className="max-lg:text-sm">
+				<div className="max-lg:text-xs">
 					<p>Handcrafted by Joel in 2024 ©</p>
 					<p>Made with React.</p>
 				</div>

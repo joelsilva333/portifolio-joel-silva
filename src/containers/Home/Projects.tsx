@@ -9,17 +9,38 @@ import "swiper/css/pagination"
 import { EffectCoverflow, Pagination } from "swiper/modules"
 import { useState } from "react"
 import { arrowRight } from "../../assets"
-import { mesaRedonda } from "../../assets/home/Projects"
+import { globalSc, mesaRedonda, myPicture } from "../../assets/home/Projects"
 
 const Projects: React.FC = () => {
 	const [openAboutIndex, setOpenAboutIndex] = useState<number | null>(null)
 
 	const projectsInfo = [
 		{
+			title: "Portifólio - Joel da Silva",
+			slogan: "Website criado para mostrar meus trabalhos.",
+			creators: "Fundado, desenhado e desenvolvido por mim.",
+			aboutProj: `Projecto totalmente criado por mim, com base no meu aprendizado e ensinamentos, usando o Figma para o design de interface, React.js como framework para desenvolvimento das interfaces, usando Typescript como linguagem de programação.`,
+			design:
+				"https://www.figma.com/design/AwfC1rdBHZ3qEHFPoKZCry/Portif%C3%B3lio-Joel?node-id=202-700&t=qY8CeNzR5P6I5L3f-0",
+			website: "",
+			bgImg: myPicture,
+		},
+		{
+			title: "Global Services Corporation",
+			slogan: "Website da empresa mediadora de seguros e multisserviços.",
+			creators:
+				"Fundado por Edson Katchievela, design Etelvino Sapomdia e desenvolvido por mim.",
+			aboutProj: `Global Services Corporation, empresa angolana de multisserviços, com sede na Rua Dr. Aleixo de Abreu, Ingombotas, Luanda, Angola.`,
+			design: "",
+			website: "https://globalsc.ao",
+			bgImg: globalSc,
+		},
+		{
 			title: "Mesa Redonda com os CEO's",
 			slogan:
 				"Um evento corporativo realizado pela Global Services Corporation.",
-			creators: "Fundado por Edson Katchievela, design Etelvino Sapomdia e desenvolvido por mim.",
+			creators:
+				"Fundado por Edson Katchievela, design Etelvino Sapomdia e desenvolvido por mim.",
 			aboutProj: `A 4ª Edição da Mesa Redonda com CEOs é um evento que reunirá líderes da economia angolana e internacional para discutir o impacto da inovação nas cadeias de produção e como essa inovação pode ajudar os líderes a se posicionarem diante dos desafios dos seus mercados.`,
 			design: "",
 			website: "https://mesaredonda.globalsc.ao",
@@ -77,12 +98,12 @@ const Projects: React.FC = () => {
 						<SwiperSlide key={index}>
 							<div className="w-full h-full rounded-[50px] flex flex-col justify-center items-center text-center gap-4 bg-whiteDefault text-blueDefault relative">
 								<div className=" w-full h-full relative rounded-[50px]">
-									<div className="absolute top-0 left-0 w-full h-full bg-[#223975]  rounded-[50px]"></div>
+									<div className="absolute top-0 left-0 w-full h-full bg-[#223a75]  rounded-[50px]"></div>
 
 									<img
 										src={proj.bgImg}
 										alt=""
-										className="object-cover w-full h-full rounded-[50px] opacity-10"
+										className="object-cover w-full h-full rounded-[50px] opacity-25"
 									/>
 								</div>
 
@@ -118,44 +139,48 @@ const Projects: React.FC = () => {
 										{proj.aboutProj}
 									</p>
 
-									{!proj.website ? (
+									{!proj.website && !proj.design ? (
 										<p className="text-lg text-whiteDefault max-lg:text-xs">
 											Disponível brevemente.
 										</p>
 									) : (
 										<div className="flex gap-2 max-lg:flex-col">
-											<a
-												href={proj.design}
-												target="_blank"
-												className="w-44 max-sm:w-32 group lg:px-4 lg:py-2.5 max-lg:px-3 max-lg:py-1 max-lg:text-xs border-2 rounded-full border-[#DEE5EF] text-whiteDefault flex items-center  hover:bg-whiteDefault transition-colors duration-300"
-											>
-												<span className="w-full group-hover:invert max-lg:text-xs">
-													Ver design
-												</span>{" "}
-												<span>
-													<img
-														src={arrowRight}
-														alt=""
-														className="group-hover:invert"
-													/>
-												</span>
-											</a>
-											<a
-												href={proj.website}
-												target="_blank"
-												className="w-44 max-sm:w-32 group lg:px-4 lg:py-2.5 max-lg:px-3 max-lg:py-1 max-lg:text-xs border-2 rounded-full border-[#DEE5EF] text-whiteDefault flex items-center  hover:bg-whiteDefault transition-colors duration-300"
-											>
-												<span className="w-full group-hover:invert max-lg:text-xs">
-													Ver website
-												</span>{" "}
-												<span>
-													<img
-														src={arrowRight}
-														alt=""
-														className="group-hover:invert"
-													/>
-												</span>
-											</a>
+											{proj.design && (
+												<a
+													href={proj.design}
+													target="_blank"
+													className="w-44 max-sm:w-32 group lg:px-4 lg:py-2.5 max-lg:px-3 max-lg:py-1 max-lg:text-xs border-2 rounded-full border-[#DEE5EF] text-whiteDefault flex items-center hover:bg-whiteDefault transition-colors duration-300"
+												>
+													<span className="w-full group-hover:invert max-lg:text-xs">
+														Ver design
+													</span>
+													<span>
+														<img
+															src={arrowRight}
+															alt=""
+															className="group-hover:invert"
+														/>
+													</span>
+												</a>
+											)}
+											{proj.website && (
+												<a
+													href={proj.website}
+													target="_blank"
+													className="w-44 max-sm:w-32 group lg:px-4 lg:py-2.5 max-lg:px-3 max-lg:py-1 max-lg:text-xs border-2 rounded-full border-[#DEE5EF] text-whiteDefault flex items-center hover:bg-whiteDefault transition-colors duration-300"
+												>
+													<span className="w-full group-hover:invert max-lg:text-xs">
+														Ver website
+													</span>
+													<span>
+														<img
+															src={arrowRight}
+															alt=""
+															className="group-hover:invert"
+														/>
+													</span>
+												</a>
+											)}
 										</div>
 									)}
 
