@@ -28,11 +28,41 @@
 .swiper-slide {
 	background-position: center;
 	background-size: cover;
-	width: 1000px;
+	width: 700px;
 	height: 400px;
 }
 
 .swiper-slide img {
 	display: block;
 	width: 100%;
+}
+
+@media (max-width: 1024px) {
+	.swiper {
+		width: 100%;
+		padding-top: 35px;
+		padding-bottom: 35px;
+	}
+
+	.swiper-slide {
+		background-position: center;
+		background-size: cover;
+		width: 500px;
+		height: 400px;
+	}
+}
+
+@media (max-width: 640px) {
+	.swiper {
+		width: 100%;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	.swiper-slide {
+		background-position: center;
+		background-size: cover;
+		width: 250px;
+		height: 300px;
+	}
 }

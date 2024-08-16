@@ -8,7 +8,7 @@ import Projects from "../containers/Home/Projects"
 
 const Home: React.FC = () => {
 	return (
-		<main className="bg-[#0F172A] text-[#DEE5EF] h-screen overflow-y-auto font-Montserrat scrollbar-custom gap-24 flex flex-col relative">
+		<main className="bg-[#0F172A] text-[#DEE5EF] h-screen overflow-y-auto font-Montserrat scrollbar-custom max-lg:gap-10 gap-24 flex flex-col relative">
 			<Header />
 			<Banner />
 

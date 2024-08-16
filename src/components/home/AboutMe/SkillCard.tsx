@@ -18,7 +18,8 @@ const SkillCard: React.FC<SkillCardProps> = ({
 	skills,
 }) => {
 	return (
-		<div className=" flex flex-col bg-[#DEE5EF] rounded-[50px] gap-4 px-12 py-12 text-blueDefault min-h-[615px] items-center text-center w-[350px] cursor-pointer transition-all duration-700 hover:-translate-y-2 ">
+		<div className=" flex flex-col bg-[#DEE5EF] sm:rounded-[50px] gap-4 px-12 py-12 text-blueDefault min-h-[615px] items-center text-center
+		sm:w-[350px] max-lg:w-full cursor-pointer transition-all duration-700 hover:-translate-y-2 ">
 			<img
 				src={mainIcon}
 				alt="Ícone Principal"

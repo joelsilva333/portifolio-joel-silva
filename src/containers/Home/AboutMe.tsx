@@ -108,12 +108,12 @@ const AboutMe: React.FC = () => {
 	]
 
 	return (
-		<section className="bg-[#223975] px-36 py-20 flex flex-col gap-12 rounded-[50px] items-center mt-4 z-40">
-			<div className="flex flex-col gap-10 text-center w-2/3">
-				<h2 className="text-2xl">
+		<section className="bg-[#223975] sm:px-36 sm:py-20 max-sm:pt-20 flex flex-col gap-12 rounded-[50px] items-center mt-4 ">
+			<div className="flex flex-col gap-10 max-lg:gap-5 text-center lg:w-2/3 max-sm:w-2/3">
+				<h2 className="max-sm:text-base text-2xl max-lg:text-xl">
 					Oi, chamo-me Joel Germano da Silva. Prazer em conhecê-lo.
 				</h2>
-				<p>
+				<p className="max-sm:text-xs max-lg:text-sm">
 					Desde que comecei minha jornada como desenvolvedor web e design, tenho
 					trabalhado em projetos diversos, integrando dados via APIs, e criando
 					experiências digitais envolventes e acessíveis. Tenho colaborado com
@@ -123,7 +123,7 @@ const AboutMe: React.FC = () => {
 				</p>
 			</div>
 
-			<div className="flex w-full gap-6 justify-center">
+			<div className="flex w-full gap-6 justify-center max-lg:flex-col max-lg:items-center">
 				{skillCardItems.map((item, index) => (
 					<SkillCard
 						key={index}

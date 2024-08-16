@@ -1,14 +1,17 @@
-import { Link } from "react-router-dom";
-import { logo } from "../assets";
+import { logo } from "../assets"
+import { useState } from "react"
+import ContactMeModal from "./home/ContactMe/Modal"
 
 const Header: React.FC = () => {
 	const scrollToProjects = (e: React.MouseEvent) => {
-		e.preventDefault();
-		const projectsSection = document.getElementById("projects");
+		e.preventDefault()
+		const projectsSection = document.getElementById("projects")
 		if (projectsSection) {
-			projectsSection.scrollIntoView({ behavior: "smooth" });
+			projectsSection.scrollIntoView({ behavior: "smooth" })
 		}
-	};
+	}
+
+	const [contactMeOpen, setContactMeOpen] = useState(false)
 
 	return (
 		<main className="flex justify-between items-center px-12 py-2.5 h-24 z-40">
@@ -21,15 +24,18 @@ const Header: React.FC = () => {
 				>
 					Projectos
 				</a>
-				<Link
-					to="#"
-					className="px-4 py-2.5 border-2 rounded-full border-[#DEE5EF] hover:bg-[#DEE5EF] transition-colors hover:text-[#0F172A] duration-700"
+				<button
+					onClick={() => setContactMeOpen(true)}
+					className="px-4 py-2.5 border-2 rounded-full border-[#DEE5EF] hover:bg-[#DEE5EF] transition-colors hover:text-[#0F172A] duration-700 flex items-center justify-center text-center"
 				>
 					Entrar em contacto
-				</Link>
+				</button>
 			</div>
+			{contactMeOpen && (
+				<ContactMeModal onClose={() => setContactMeOpen(false)} />
+			)}
 		</main>
-	);
+	)
 }
 
-export default Header;
+export default Header
