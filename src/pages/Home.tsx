@@ -1,4 +1,3 @@
-import { elipseBlur } from "../assets"
 import Footer from "../components/Footer"
 import Header from "../components/Header"
 import AboutMe from "../containers/Home/AboutMe"
@@ -12,11 +11,6 @@ const Home: React.FC = () => {
 			<Header />
 			<Banner />
 			<Projects />
-			<img
-				src={elipseBlur}
-				alt="Nada"
-				className="absolute -top-3/4 -left-1/2  animate-pulse"
-			/>
 			<AboutMe />
 			<Enterprises />
 			<Footer />
