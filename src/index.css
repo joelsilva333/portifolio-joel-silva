@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+.mySwiper .swiper-pagination {
+	@apply bottom-0;
+}
+
+.swiper-pagination-bullet-active {
+	@apply text-whiteDefault bg-whiteDefault 
+}
+
+
 @media (min-width: 1024px) {
 	.scrollbar-custom::-webkit-scrollbar {
 		width: 8px;

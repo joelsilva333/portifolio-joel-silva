@@ -6,7 +6,7 @@ const Enterprises: React.FC = () => {
 	const enterpriseInfo = [
 		{
 			imgSrc: ocasoLogo,
-			date: "19-02-2024 - Até a recente data.",
+			date: "21-02-2024 - Até a recente data.",
 			name: "OCASO Group",
 		},
 		{
@@ -26,7 +26,7 @@ const Enterprises: React.FC = () => {
 		},
 	]
 	return (
-		<section className="flex flex-col bg-[#223975] md:py-20 lg:px-16 max-lg:px-10 max-lg:py-12  justify-center items-center rounded-[50px] gap-12 max-lg:gap-4 ma z-40">
+		<section className="flex flex-col bg-[#223975] md:py-20 lg:px-16 max-lg:px-10 max-lg:py-12  justify-center items-center sm:rounded-[50px] gap-12 max-lg:gap-4 ma z-40">
 			<h2 className="text-xl max-lg:text-lg max-sm:text-base lg:w-2/4 max-lg:w-full text-center">
 				Tenho orgulho de ter colaborado com algumas empresas incríveis, tais
 				como:

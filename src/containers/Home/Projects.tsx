@@ -1,15 +1,21 @@
 import { Swiper, SwiperSlide } from "swiper/react"
 
-// Import Swiper styles
 import "swiper/css"
 import "swiper/css/effect-coverflow"
 import "swiper/css/pagination"
 
-// import required modules
 import { Autoplay, EffectCoverflow, Pagination } from "swiper/modules"
 import { useState } from "react"
 import { arrowRight } from "../../assets"
-import { globalSc, mesaRedonda, myPicture } from "../../assets/home/Projects"
+import {
+	albooni,
+	globalSc,
+	mariaBorges,
+	mesaRedonda,
+	myPicture,
+	onlyHere,
+	unocura,
+} from "../../assets/home/Projects"
 
 const Projects: React.FC = () => {
 	const [openAboutIndex, setOpenAboutIndex] = useState<number | null>(null)
@@ -17,7 +23,7 @@ const Projects: React.FC = () => {
 	const projectsInfo = [
 		{
 			title: "Portifólio - Joel da Silva",
-			slogan: "Website criado para mostrar meus trabalhos.",
+			slogan: "Desenvolvido para mostrar meus trabalhos.",
 			creators: "Fundado, desenhado e desenvolvido por mim.",
 			aboutProj: `Projecto totalmente criado por mim, com base no meu aprendizado e ensinamentos, usando o Figma para o design de interface, React.js como framework para desenvolvimento das interfaces, usando Typescript como linguagem de programação.`,
 			design:
@@ -27,7 +33,7 @@ const Projects: React.FC = () => {
 		},
 		{
 			title: "Global Services Corporation",
-			slogan: "Website da empresa mediadora de seguros e multisserviços.",
+			slogan: "Desenvolvido para a empresa mediadora de seguros e multisserviços.",
 			creators:
 				"Fundado por Edson Katchievela, design Etelvino Sapomdia e desenvolvido por mim.",
 			aboutProj: `Global Services Corporation, empresa angolana de multisserviços, com sede na Rua Dr. Aleixo de Abreu, Ingombotas, Luanda, Angola.`,
@@ -47,6 +53,26 @@ const Projects: React.FC = () => {
 			bgImg: mesaRedonda,
 		},
 		{
+			title: "UNOCURA",
+			slogan: "Uma plataforma de telemedicina e outros serviços de saúde.",
+			creators:
+				"Fundado por Antonio Contreiras, design Clénio Muty e Ednilson Araújo, desenvolvido por mim e outros colaboradores",
+			aboutProj: `Unocura é uma solução digital que permite que profissionais de saúde realizem consultas médicas e forneçam outros serviços relacionados à saúde de forma remota, utilizando tecnologia como videochamadas, chat, e outras ferramentas de comunicação. `,
+			design: "",
+			website: "http://unocura.ao",
+			bgImg: unocura,
+		},
+		{
+			title: "Website - Maria Borges",
+			slogan: "Desenvolvido para a modelo angolana Maria Borges.",
+			creators:
+				"Fundado por Antonio Contreiras, design Ednilson Araújo, desenvolvido por mim.",
+			aboutProj: `Maria Borges é uma modelo angolana conhecida por seu trabalho internacional na indústria da moda. Ela ganhou notoriedade ao ser a primeira modelo africana a desfilar para a Victoria's Secret com o cabelo natural, em 2015.`,
+			design: "",
+			website: "",
+			bgImg: mariaBorges,
+		},
+		{
 			title: "Albooni",
 			slogan: "Guarde aqui todos seus momentos!",
 			creators: "Fundado e desenvolvido por mim.",
@@ -54,7 +80,7 @@ const Projects: React.FC = () => {
 						atividades em formato de albuns e vê-los em qualquer lugar!`,
 			design: "",
 			website: "",
-			bgImg: "",
+			bgImg: albooni,
 		},
 		{
 			title: "Only Here",
@@ -64,20 +90,20 @@ const Projects: React.FC = () => {
 						criar um perfil, totalmente gratuita.`,
 			design: "",
 			website: "",
-			bgImg: "",
+			bgImg: onlyHere,
 		},
 	]
 
 	return (
 		<section
-			className="bg-[#223975] flex flex-col lg:p-12 max-lg:p-10 gap-6 max-lg:gap-4 justify-center items-center h-[670px] relative sm:rounded-[50px]"
+			className="bg-[#223975] flex flex-col lg:px-12 lg:py-14 max-lg:px-10 max-lg:py-14 gap-6 max-lg:gap-4 justify-center items-center h-[670px] relative sm:rounded-[50px]"
 			id="projects"
 		>
 			<h2 className="text-2xl text-center max-lg:text-lg max-sm:text-base">
 				Meus projectos e trabalhos recentes
 			</h2>
 
-			<div className="sm:h-[460px] w-3/4 max-lg:w-4/5 max-sm:w-full">
+			<div className="sm:h-[480px] w-3/4 max-lg:w-4/5 max-sm:w-full max-sm:h-[350px]">
 				<Swiper
 					effect={"coverflow"}
 					grabCursor={true}
@@ -90,13 +116,17 @@ const Projects: React.FC = () => {
 						modifier: 1,
 						slideShadows: true,
 					}}
-					autoplay={true}
-					pagination={false}
+					loop={true}
+					autoplay={{
+						delay: 2500,
+						disableOnInteraction: true,
+					}}
+					pagination={true}
 					modules={[EffectCoverflow, Pagination, Autoplay]}
-					className="mySwiper"
+					className="mySwiper h-full"
 				>
 					{projectsInfo.map((proj, index) => (
-						<SwiperSlide key={index}>
+						<SwiperSlide key={index} className="">
 							<div className="w-full h-full rounded-[50px] flex flex-col justify-center items-center text-center gap-4 bg-whiteDefault text-blueDefault relative">
 								<div className=" w-full h-full relative rounded-[50px]">
 									<div className="absolute top-0 left-0 w-full h-full bg-[#223a75]  rounded-[50px]"></div>
