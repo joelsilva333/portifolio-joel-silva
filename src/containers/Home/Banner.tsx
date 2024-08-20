@@ -5,7 +5,7 @@ const Banner: React.FC = () => {
 		<section className="flex justify-center items-center sm:px-24 max-sm:px-10 py-12 h-80">
 			<div className="flex flex-col items-center justify-center gap-7 p-2.5">
 				<h1 className="font-bold text-3xl text-center max-lg:text-lg max-sm:text-base">
-					Desenvolvedor Front-end, Backend & Designer
+					Desenvolvedor Front-end & Designer
 				</h1>
 
 				<p className="w-2/3 max-sm:w-4/5 text-center max-sm:text-xs max-lg:text-sm">

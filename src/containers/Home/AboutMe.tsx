@@ -1,4 +1,4 @@
-import {
+/* import {
 	backend,
 	expressJs,
 	javascript,
@@ -6,7 +6,7 @@ import {
 	nodeJs,
 	postgreSql,
 	typescript,
-} from "../../assets/icons/backendTools"
+} from "../../assets/icons/backendTools" */
 import {
 	adobeXd,
 	designIcon,
@@ -76,7 +76,7 @@ const AboutMe: React.FC = () => {
 				"Integração Contínua/Desenvolvimento Contínuo (CI/CD)",
 			],
 		},
-		{
+		/* {
 			mainIcon: backend,
 			title: "Desenvolvedor Backend",
 			description:
@@ -104,7 +104,7 @@ const AboutMe: React.FC = () => {
 				"Gerenciamento de Estado",
 				"Otimização de Desempenho",
 			],
-		},
+		}, */
 	]
 
 	return (
