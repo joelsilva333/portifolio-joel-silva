@@ -1,9 +1,9 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import AboutMe from "../containers/home/AboutMe";
-import Banner from "../containers/home/Banner";
-import Enterprises from "../containers/home/Enterprises";
-import Projects from "../containers/home/Projects";
+import AboutMe from "../containers/Home/AboutMe";
+import Banner from "../containers/Home/Banner";
+import Enterprises from "../containers/Home/Enterprises";
+import Projects from "../containers/Home/Projects";
 
 const Home: React.FC = () => {
   return (
