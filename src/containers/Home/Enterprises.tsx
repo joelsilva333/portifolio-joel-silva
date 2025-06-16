@@ -1,23 +1,18 @@
 import React from "react"
 import EnterpriseCard from "../../components/home/Enterprises/EnterpriseCard"
-import { angoVerso, digitalBoost, gscLogo, ocasoLogo } from "../../assets/home/Enterprises"
+import { digitalBoost, gscLogo, ocasoLogo } from "../../assets/home/Enterprises"
 
 const Enterprises: React.FC = () => {
 	const enterpriseInfo = [
 		{
 			imgSrc: ocasoLogo,
-			date: "21-02-2024 - Até a recente data.",
+			date: "21-02-2024 - 24-10-2024.",
 			name: "OCASO Group",
 		},
 		{
 			imgSrc: gscLogo,
 			date: "23-01-2024 - Até a recente data.",
 			name: "Global Services Corporation",
-		},
-		{
-			imgSrc: angoVerso,
-			date: "06-07-2024 - Até a recente data.",
-			name: "AngoVerso",
 		},
 		{
 			imgSrc: digitalBoost,
